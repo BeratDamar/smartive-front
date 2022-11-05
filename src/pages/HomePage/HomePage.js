@@ -6,6 +6,8 @@ const HomePage = () => {
     <div className='home-container'>
       <div className='welcome-text'>Welcome to smartive</div>
       // <PostBox />
+
+      <h1>Homepage</h1>
     </div>
   );
 };
