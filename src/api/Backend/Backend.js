@@ -4,5 +4,5 @@ export const postLogin = (email, password) => {
   return ApiInstance.post('/user/login', { email, password });
 };
 export const postRegister = (email, name, password) => {
-  return ApiInstance.post('/user/signup', { email, name, password });
+  return ApiInstance.post('/user/register', { email, name, password });
 };
