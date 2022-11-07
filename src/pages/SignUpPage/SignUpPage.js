@@ -28,6 +28,7 @@ const SignUpPage = () => {
       console.log(response, response.data);
       if (response.status === 204 || response.status === 200 ) {
         setIsAuthenticated(true);
+        alert('Successfully signed up!');
       } else if (response.status === 400) {
         alert("This e-mail had already been registered!");
         setUsername("");
