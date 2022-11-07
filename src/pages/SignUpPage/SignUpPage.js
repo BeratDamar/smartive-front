@@ -25,6 +25,7 @@ const SignUpPage = () => {
       validEmail(email)
     ) {
       const response = await BackendApi.postRegister(email, username, password);
+      console.log(response, response.data);
       if (response.status === 200) {
         setIsAuthenticated(true);
       } else if (response.status === 400) {
