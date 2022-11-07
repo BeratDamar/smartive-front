@@ -26,7 +26,7 @@ const SignUpPage = () => {
     ) {
       const response = await BackendApi.postRegister(email, username, password);
       console.log(response, response.data);
-      if (response.status === 200) {
+      if (response.status === 204 || response.status === 200 ) {
         setIsAuthenticated(true);
       } else if (response.status === 400) {
         alert("This e-mail had already been registered!");
